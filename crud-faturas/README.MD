@@ -13,8 +13,6 @@ RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
 
 ## 5 - Configurando MySQL e banco de dados
 
-----------------------------------------------------------------------------------------------
-
 CREATE DATABASE crud_faturas
   CHARACTER SET utf8mb4
   COLLATE utf8mb4_general_ci;
@@ -47,8 +45,6 @@ CREATE TABLE invoice_lines (
   FOREIGN KEY (invoice_id) REFERENCES invoices(id) ON DELETE CASCADE
 );
 
-----------------------------------------------------------------------------------------------
-
 /config/database.php
 
 <?php
@@ -59,7 +55,6 @@ return [
     'pass' => '',
 ];
 
-----------------------------------------------------------------------------------------------
 
 /app/DB.php
 
@@ -87,7 +82,9 @@ class DB
     }
 }
 
+
 ## 6 - Após configurar, digite "composer init" Exemplo abaixo.
+
 
 package name: php-crud/faturas (ou o nome que quiser)
 
