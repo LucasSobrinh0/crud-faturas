@@ -1,17 +1,17 @@
-## 1 - XAMPP Control Panel - Iniciar Apache e MySQL
+# 1 - XAMPP Control Panel - Iniciar Apache e MySQL
 
-## 2 - Acessar http://localhost/phpmyadmin
+# 2 - Acessar http://localhost/phpmyadmin
 
-## 3 - Entrar no diretório C:\xampp\htdocs e criar o projeto.
+# 3 - Entrar no diretório C:\xampp\htdocs e criar o projeto.
 
-## 4 - Criar o .htaccess dentro da pasta public
+# 4 - Criar o .htaccess dentro da pasta public
 
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
 
-## 5 - Configurando MySQL e banco de dados
+# 5 - Configurando MySQL e banco de dados
 
 CREATE DATABASE crud_faturas
   CHARACTER SET utf8mb4
@@ -83,7 +83,7 @@ class DB
 }
 
 
-## 6 - Após configurar, digite "composer init" Exemplo abaixo.
+# 6 - Após configurar, digite "composer init" Exemplo abaixo.
 
 
 package name: php-crud/faturas (ou o nome que quiser)
@@ -96,9 +96,9 @@ minimum-stability: stable
 
 Quando perguntar se quer salvar, digite yes
 
-## 6.1 - composer init --name="php-crud/faturas" --description="CRUD de faturas telefônicas em PHP" --author="Seu Nome <email@exemplo.com>" --require="" --autoload="psr-4:{\"App\\\\\":\"app/\"}" --no-interaction
+# 6.1 - composer init --name="php-crud/faturas" --description="CRUD de faturas telefônicas em PHP" --author="Seu Nome <email@exemplo.com>" --require="" --autoload="psr-4:{\"App\\\\\":\"app/\"}" --no-interaction
 
-## 7 - Abra o composer.json recém-gerado e adicione:
+# 7 - Abra o composer.json recém-gerado e adicione:
 
 "autoload": {
   "psr-4": {
@@ -106,5 +106,5 @@ Quando perguntar se quer salvar, digite yes
   }
 }
 
-## 8 - Após, digite "composer dump-autoload"
+# 8 - Após, digite "composer dump-autoload"
 
