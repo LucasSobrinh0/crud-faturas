@@ -108,3 +108,13 @@ Quando perguntar se quer salvar, digite yes
 
 # 8 - Após, digite "composer dump-autoload"
 
+
+
+# instalar dependências
+composer install
+cp .env.example .env
+php -S localhost:8000 -t public
+
+# criar DB
+mysql -u root < database.sql
+vendor/bin/phpunit
