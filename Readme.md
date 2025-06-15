@@ -1,3 +1,11 @@
+# Imagens do projeto funcionando
+
+![Dashboard](crud-faturas/img/dashboard.png)
+
+![Dashboard](crud-faturas/img/faturas.png)
+
+![Dashboard](crud-faturas/img/clients.png)
+
 # CRUD-Faturas • Guia de Instalação & Uso
 
 Sistema em **PHP 8** (pura), **MySQL** e **Bootstrap 5** para gerenciar Clientes, Faturas, Linhas de Fatura, upload de PDF e um painel com métricas e gráfico em tempo real.
