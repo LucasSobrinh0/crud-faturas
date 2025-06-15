@@ -1,4 +1,4 @@
-# Imagens do projeto funcionando
+# Prévia do projeto
 
 ![Dashboard](img/dashboard.png)
 
