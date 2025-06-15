@@ -1,10 +1,10 @@
 # Imagens do projeto funcionando
 
-![Dashboard](crud-faturas/img/dashboard.png)
+![Dashboard](img/dashboard.png)
 
-![Dashboard](crud-faturas/img/faturas.png)
+![Dashboard](img/faturas.png)
 
-![Dashboard](crud-faturas/img/clients.png)
+![Dashboard](img/clients.png)
 
 # CRUD-Faturas • Guia de Instalação & Uso
 
