@@ -137,6 +137,17 @@ Acesse [http://localhost:8000/](http://localhost:8000/).
 | **Class … not found**                                    | Arquivo ausente em `app/Controllers/…` ou namespace errado. Verifique se o nome do arquivo e o namespace batem.       |
 | **Bad Request / 404** ao acessar `/crud-faturas/public/` | `.htaccess` ignorado. Confirme que o módulo `mod_rewrite` está habilitado no Apache (`httpd.conf`).                   |
 | **Valores decimais gravados como 0**                     | Locale diferente. Certifique-se de que o input usa vírgula e o PHP converte com `str_replace(['.', ','], ['', '.'])`. |
+| **
+| **Not Found 404                                          | C:\xampp\apache\conf\extra\httpd-vhosts.conf          |
+
+<VirtualHost *:80>
+    ServerName todo.local
+    DocumentRoot "C:/xampp/htdocs/crud-faturas/public"
+    <Directory "C:/xampp/htdocs/crud-faturas/public">
+        AllowOverride All
+        Require all granted
+    </Directory>
+</VirtualHost>
 
 ---
 
