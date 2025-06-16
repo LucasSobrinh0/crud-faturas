@@ -93,6 +93,28 @@ mkdir C:\xampp\htdocs\crud-faturas\public\uploads
 
 ---
 
+4. Configurar VirtualHost
+
+   Acesse o C:\xampp\apache\conf\extra\httpd-vhosts.conf e coloque:
+   
+<VirtualHost *:80>
+
+    ServerName crud.local
+    
+    DocumentRoot "C:/xampp/htdocs/crud-faturas/public"
+
+    <Directory "C:/xampp/htdocs/crud-faturas/public">
+        AllowOverride All
+        
+        Require all granted
+        
+    </Directory>
+    
+</VirtualHost>
+
+Para acessar o site, acesse http://localhost
+
+
 ## ▶️ 4. Executando
 
 ### 4.1 Via Apache/XAMPP (recomendado)
