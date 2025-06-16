@@ -12,7 +12,7 @@
     </div>
     <div class="col-md-6">
       <label class="form-label">CNPJ</label>
-      <input type="text" name="cnpj" class="form-control" minlength="14" required>
+      <input type="text" name="cnpj" class="form-control" minlength="14" maxlength="18" required>
     </div>
     <div class="col-12">
       <button class="btn btn-success">Salvar</button>
